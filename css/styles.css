@@ -97,6 +97,10 @@ address {
     margin-left: auto;
 }
 
+.menu-contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .menu-link {
     font-size: 14px;
     line-height: 1.14;
@@ -114,8 +118,7 @@ address {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.6);
-    margin-right: 50px;
+    color: rgba(117, 117, 117, 1);
     font-weight: 500;
 }
 
@@ -128,7 +131,7 @@ address {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(117, 117, 117, 1);
     font-weight: 500;
 }
 
@@ -194,8 +197,11 @@ address {
 
 .advantage-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 30px;
+}
+
+.advantage-item {
+    width: 270px;
 }
 
 .advantage-title {
@@ -211,7 +217,6 @@ address {
 .advantage-text {
     line-height: 1.71;
     letter-spacing: 0.03em;
-    width: 270px;
     height: 75px;
     color: #757575;
     font-size: 14px;
@@ -317,7 +322,17 @@ address {
 }
 
 .basement-logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
     margin-bottom: 20px;
+}
+
+.basement-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .basement-adress {
@@ -328,25 +343,21 @@ address {
     font-weight: 400;
 }
 
-.basement-item-address {
-    margin-bottom: 9px;
-}
-
-.basement-item-mail {
-    margin-bottom: 9px;
-}
-
-.contact-mail, 
-.contact-phone {
+.basement-contact-mail, 
+.basement-contact-phone {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: rgba(117, 117, 117, 0.8);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
 }
 
 .basement-adress:hover,
-.basement-adress:focus {
+.basement-adress:focus,
+.basement-contact-mail:hover,
+.basement-contact-mail:focus,
+.basement-contact-phone:hover,
+.basement-contact-phone:focus {
     color: var(--accent-color);
 }
 /*-- /Basement --*/
@@ -357,9 +368,10 @@ address {
     padding-bottom: 94px;
 }
 
-.page-nav-portfolio {
+.menu-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .menu-button-item:not(:last-child) {
@@ -378,8 +390,8 @@ address {
     cursor: pointer;
     font-weight: 500;
     border: none;
-    margin-bottom: 34px;
-}
+    padding: 6px 22px;
+    }
 
 .modal-button-filter:active {
     color: #FFFFFF;
@@ -403,7 +415,6 @@ address {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     margin-bottom: 4px;
     color: #212121;
 }
@@ -411,7 +422,6 @@ address {
 .portfolio-proect-item {
     line-height: 1.88;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
     color: #757575;
 }
 
